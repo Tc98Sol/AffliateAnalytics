@@ -9,9 +9,14 @@ namespace Tc98
 	{
 		class FlipkartDataSource : public RemoteDataSource
 		{
+<<<<<<< HEAD
 		public:
 			FlipkartDataSource();
 			FlipkartDataSource(const std::string uri, const std::string relativePath, const std::unordered_map<std::string, std::string>::iterator it);
+=======
+			FlipkartDataSource();
+			FlipkartDataSource(const std::string uri, const std::string relativePath, const std::unordered_map<std::string, std::string>::iterator it)
+>>>>>>> feab6def9ebea67e0953d2c297badc650a7eae74
 			~FlipkartDataSource();
 
 			bool SendRequest();

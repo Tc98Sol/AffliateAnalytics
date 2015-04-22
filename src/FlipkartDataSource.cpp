@@ -1,6 +1,9 @@
 #include "FlipkartDataSource.h"
+<<<<<<< HEAD
 #include <cpprest/http_client.h>
 #include <cpprest/filestream.h>
+=======
+>>>>>>> feab6def9ebea67e0953d2c297badc650a7eae74
 
 namespace Tc98
 {
@@ -14,6 +17,7 @@ namespace Tc98
 
 		FlipkartDataSource::~FlipkartDataSource()
 		{}
+<<<<<<< HEAD
 
 		bool FlipkartDataSource::SendRequest()
 		{
@@ -33,7 +37,17 @@ namespace Tc98
 				return ;
 			});
 			return true; //why?
+=======
+		
+		bool FlipkartDataSource::SendRequest()
+		{
+			return false;
+>>>>>>> feab6def9ebea67e0953d2c297badc650a7eae74
 		}
 	}
 }
 
+<<<<<<< HEAD
+=======
+#endif
+>>>>>>> feab6def9ebea67e0953d2c297badc650a7eae74
