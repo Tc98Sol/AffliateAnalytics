@@ -10,8 +10,9 @@ namespace Tc98
 	{
 		class RemoteDataSource
 		{
+		public:
 			RemoteDataSource();
-			RemoteDataSource(const std::string uri, const std::string relativePath, const std::unordered_map<std::string, std::string>::iterator it)
+			RemoteDataSource(const std::string uri, const std::string relativePath, const std::unordered_map<std::string, std::string>::iterator it);
 			virtual ~RemoteDataSource() = 0;
 
 			std::string GetUri();
@@ -28,10 +29,10 @@ namespace Tc98
 			virtual bool SendRequest();
 			void ResponseCallBack(); //it should be an interface
 
-		private:
+		protected:
 			std::string _uri;
-			std::string _relativePath;
-			std::unordered_map < std::string, std::string> queryMap;
+			std::string _relativePath; //should be like "/offers"
+			std::unordered_map < std::string, std::string> _queryMap;
 		};
 	}
 }

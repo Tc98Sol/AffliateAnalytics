@@ -7,61 +7,63 @@ namespace Tc98
 		RemoteDataSource::RemoteDataSource()
 		{}
 
-		RemoteDataSource::RemoteDataSource(const std::string uri, const std::string relativePath, const std::unordered_map<std::string, std::string>::iterator it);
+		RemoteDataSource::RemoteDataSource(const std::string uri, const std::string relativePath, const std::unordered_map<std::string, std::string>::iterator it)
 		{}
 
-		//virtual RemoteDataSource::~RemoteDataSource()
+		RemoteDataSource::~RemoteDataSource()
+		{}
 
 		std::string GetUri()
 		{
 			return std::string();
 		}
 
-		void SetUri(const std::string)
+		void RemoteDataSource::SetUri(const std::string)
 		{}
 
-		bool IsUriEmty()
+		bool RemoteDataSource::IsUriEmty()
 		{
 			return true;
 		}
 
-		std::string GetRelativePath()
+		std::string RemoteDataSource::GetRelativePath()
 		{
-			return std::sting();
+			return std::string();
 		}
 
-		void SetRelativePath(const std::string)
+		void RemoteDataSource::SetRelativePath(const std::string)
 		{}
 
 		bool IsRelativePathEmpty()
 		{
 			return true;
 		}
-		std::unordered_map<std::string, std::string>::iterator GetQueryMap()
+		std::unordered_map<std::string, std::string>::iterator RemoteDataSource::GetQueryMap()
 		{
-			std::unordered_map<std::string, std::string>::iterator;
+			std::unordered_map<std::string, std::string>::iterator it;
+			return it;
 		}
 
-		bool AddQueryToQueryMap(const std::string name, const std::string value)
+		bool RemoteDataSource::AddQueryToQueryMap(const std::string name, const std::string value)
 		{
 			return false;
 		}
 
-		bool IsQueryMapEmpty();
+		bool RemoteDataSource::IsQueryMapEmpty()
 		{
 			return true;
 		}
-		bool ClearQueryMap()
+		bool RemoteDataSource::ClearQueryMap()
 		{
 			return true;
 		}
 
-		bool SendRequest()
+		bool RemoteDataSource::SendRequest()
 		{
 			return false;
 		}
 
-		void ResponseCallBack()
+		void RemoteDataSource::ResponseCallBack()
 		{}
 		
 	}
